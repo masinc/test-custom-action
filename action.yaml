@@ -5,6 +5,9 @@ inputs:
     description: execution runtime
     required: true
     default: zx
+outputs:
+  rand:
+    description: random value
 runs:
   using: node16
   main: index.js
