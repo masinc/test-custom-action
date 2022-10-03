@@ -10,7 +10,9 @@ async function exec(commands) {
     const [cmd, ...args] = commands;
 
     return new Promise((resolve, reject) => {
-        const spawn = child_process.spawn(cmd, args);
+        const spawn = child_process.spawn(cmd, args, {
+            shell: process.platform === 'win32'
+        });
         spawn.stdout.on("data", (chunk) => {
             process.stdout.write(chunk.toString());
         })
