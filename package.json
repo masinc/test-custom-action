@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "zx": "zx main.mjs",
+    "pwsh": "pwsh main.ps1",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
