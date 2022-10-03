@@ -15,5 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: masinc/test-custom-action@main
+        id: ca
         with:
           runtime: pwsh
+      - run: "echo ${{ steps.ca.outputs.rand }}"
