@@ -1,0 +1,5 @@
+name: test-custom-action
+description: test
+runs:
+  using: node16
+  main: index.js
