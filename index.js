@@ -10,8 +10,6 @@ function init_action() {
 
     console.log(child_process.execSync(`git clone --depth 1 --single-branch -b ${branch} ${repoUrl} ${dir}`).toString());
 
-    process.chdir(dir);
-
     console.log(child_process.execSync('npm ci').toString());
     console.log(child_process.execSync('npm start').toString());
 }
