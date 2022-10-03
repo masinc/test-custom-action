@@ -48,4 +48,7 @@ async function init_action() {
     await exec(['npm', 'run', runtime])
 }
 
-init_action().catch(console.error)
+init_action().catch((e) => {
+    console.error(e);
+    process.exit(1);
+})
