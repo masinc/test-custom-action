@@ -1,5 +1,6 @@
 import process from 'node:process';
 import child_process from 'node:child_process';
+import path from 'node:path';
 
 function init_action() {
     const repo = process.env['GITHUB_ACTION_REPOSITORY'];
