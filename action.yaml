@@ -1,5 +1,10 @@
 name: test-custom-action
 description: test
+inputs:
+  runtime:
+    description: execution runtime
+    required: true
+    default: zx
 runs:
   using: node16
   main: index.js
