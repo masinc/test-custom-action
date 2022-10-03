@@ -20,7 +20,7 @@ async function exec(commands) {
         });
 
         spawn.on('close', (code) => {
-            if (code ?? 0 === 0) {
+            if ((code ?? 0) === 0) {
                 resolve();
             } else {
                 reject(`error code: ${code}`)
